@@ -61,4 +61,20 @@ ul {
 
 input[type="button"] {
     margin: 0 2rem;
+    padding: 16px 64px;
+    background-color: hsl(25, 36%, 32%);
+    border: none;
+    border-radius: 0.3rem;
+    color: white;
+    box-shadow: 2px 2px 4px hsl(0, 0%, 50%, 0.5);
+    transition: box-shadow 200ms, transform 200ms, background-color 200ms;
+}
+
+input[type="button"]:hover {
+    background-color: #ad7e4c;
+}
+
+input[type="button"]:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 4px hsl(0, 0%, 50%, 0.5);
 }
