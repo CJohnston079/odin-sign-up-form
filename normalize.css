@@ -355,3 +355,13 @@ template {
 li {
   list-style: none;
 }
+
+/**
+ * Set padding to 0 on list elements
+ */
+
+
+ol,
+ul {
+  padding: 0;
+}
