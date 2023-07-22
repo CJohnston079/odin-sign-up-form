@@ -22,13 +22,13 @@ body > * {
 
 figure {
     position: absolute;
-    top: 15vh;
+    top: 20vh;
     width: 100%;
     display: flex;
     justify-content: center;
     margin: auto 0;
     padding: 2rem 0;
-    background-color: hsl(0, 0%, 0%, 0.75);
+    background-color: hsl(0, 0%, 0%, 0.5);
 }
 
 #sidebar img {
