@@ -1,3 +1,7 @@
+html {
+    font-family: sans-serif;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -40,5 +44,21 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+#sign-up h1,
+#sign-up h2, 
+#sign-up p {
+    padding: 0 2rem;
+}
+
+ul {
+    padding: 2rem;
     background-color: white;
+    box-shadow: 0 2px 8px hsl(0, 0%, 50%, 0.5);
+}
+
+input[type="button"] {
+    margin: 0 2rem;
 }
