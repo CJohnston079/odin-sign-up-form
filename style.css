@@ -3,8 +3,13 @@ html {
 }
 
 :root {
-    --cl-accent-dark: hsl(25, 36%, 32%);
-    --c-accent-light: hsl(31, 39%, 49%);
+    --cl-blue-light: hsl(187, 25%, 35%);
+    --cl-blue-dark: hsl(187, 83%, 14%);
+    --c-green-light: hsl(31, 39%, 49%);
+    --cl-green-dark: hsl(25, 36%, 32%);
+
+    --c-accent-light: var(--c-green-light);
+    --cl-accent-dark: var(--cl-green-dark);
 }
 
 body {
@@ -19,7 +24,7 @@ body > * {
 
 a {
     color: var(--cl-accent-dark);
-    font-weight: bold;
+    font-weight: bold§;
 }
 
 a:hover {
