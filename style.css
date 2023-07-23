@@ -8,8 +8,10 @@ html {
     --c-green-light: hsl(31, 39%, 49%);
     --cl-green-dark: hsl(25, 36%, 32%);
 
-    --c-accent-light: var(--c-green-light);
+    --cl-accent-light: var(--c-green-light);
     --cl-accent-dark: var(--cl-green-dark);
+    --cl-input-light: var(--cl-blue-light);
+    --cl-input-dark: var(--cl-blue-dark);
 }
 
 body {
@@ -101,10 +103,28 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    background-color: var(--c-accent-light);
+    background-color: var(--cl-accent-light);
 }
 
 input[type="button"]:active {
     transform: translate(2px, 2px);
     box-shadow: 0px 0px 4px hsl(0, 0%, 50%, 0.5);
 }
+
+input:not([type="button"]) {
+    appearance: none;
+    border: solid hsl(0, 0%, 90%) 0.1rem;
+    border-radius: 4px;
+    padding: 0.2rem;
+    transition: border 200ms, box-shadow 200ms;
+}
+
+input:not([type="button"]):focus {
+    border: solid var(--cl-input-light) 0.1rem;
+    box-shadow: 2px 2px 2px hsl(0, 0%, 80%, 0.5);
+}
+
+/* input:not([type="button"]):valid {
+    border: solid var(--cl-accent-dark) 0.1rem;
+    box-shadow: 2px 2px 2px hsl(0, 0%, 80%, 0.5);
+} */
