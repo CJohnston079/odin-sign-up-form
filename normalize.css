@@ -365,3 +365,11 @@ ol,
 ul {
   padding: 0;
 }
+
+/**
+ * Removed default outline on input elements
+ */
+
+input {
+  outline: none;
+}
