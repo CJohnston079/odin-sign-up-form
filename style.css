@@ -2,6 +2,11 @@ html {
     font-family: sans-serif;
 }
 
+:root {
+    --cl-accent-dark: hsl(25, 36%, 32%);
+    --c-accent-light: hsl(31, 39%, 49%);
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -10,6 +15,15 @@ body {
 body > * {
     flex: 1;
     height: 100vh;
+}
+
+a {
+    color: var(--cl-accent-dark);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--c-accent-light);
 }
 
 #sidebar {
@@ -60,9 +74,10 @@ ul {
 }
 
 input[type="button"] {
+    cursor: pointer;
     margin: 0 2rem;
     padding: 16px 64px;
-    background-color: hsl(25, 36%, 32%);
+    background-color: var(--cl-accent-dark);
     border: none;
     border-radius: 0.3rem;
     color: white;
@@ -71,7 +86,7 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    background-color: #ad7e4c;
+    background-color: var(--c-accent-light);
 }
 
 input[type="button"]:active {
