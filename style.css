@@ -1,5 +1,5 @@
 html {
-    font-family: sans-serif;
+    font-family: norse-bold, sans-serif;
 }
 
 :root {
@@ -13,6 +13,11 @@ html {
     --cl-input-light: var(--cl-blue-light);
     --cl-input-dark: var(--cl-blue-dark);
 }
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+  }
 
 body {
     display: flex;
