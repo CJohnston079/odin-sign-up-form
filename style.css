@@ -87,7 +87,13 @@ form > * {
     box-shadow: 2px 2px 4px hsl(0, 0%, 50%, 0.5);
 }
 
+#inputs ul {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 label {
+    display: block;
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
