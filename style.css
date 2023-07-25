@@ -3,10 +3,18 @@ html {
 }
 
 :root {
+    --cl-white: white;
+    --cl-black: black;
+    --cl-light-grey: hsl(0, 0%, 95%);
+    --cl-dark-grey: hsl(0, 0%, 10%);
     --cl-blue-light: hsl(187, 25%, 35%);
     --cl-blue-dark: hsl(187, 83%, 14%);
     --c-green-light: hsl(31, 39%, 49%);
     --cl-green-dark: hsl(25, 36%, 32%);
+
+    --cl-background: var(--cl-light-grey);
+    --cl-background-accent: var(--cl-white);
+    --cl-foreground: var(--cl-black);
 
     --cl-accent-light: var(--c-green-light);
     --cl-accent-dark: var(--cl-green-dark);
@@ -66,38 +74,27 @@ figure {
     max-height: 200px;
 }
 
-#sign-up {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: hsl(0, 0%, 95%);
+form {
+    background-color: var(--cl-background);
 }
 
-#sign-up h1,
-#sign-up h2, 
-#sign-up p {
-    padding: 0 2rem;
-}
-
-ul {
+form > * {
     padding: 2rem;
-    background-color: white;
-    box-shadow: 0 2px 8px hsl(0, 0%, 50%, 0.5);
 }
 
-li {
-    padding: 0.5rem 0;
+#inputs {
+    background-color: var(--cl-background-accent);
+    box-shadow: 2px 2px 4px hsl(0, 0%, 50%, 0.5);
 }
 
 label {
     font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
 
 input[type="button"] {
     cursor: pointer;
-    margin: 0 2rem;
     padding: 16px 64px;
     background-color: var(--cl-accent-dark);
     border: none;
