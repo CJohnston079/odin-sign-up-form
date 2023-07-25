@@ -1,5 +1,5 @@
 html {
-    font-family: norse-bold, sans-serif;
+    font-family: raleway, sans-serif;
 }
 
 :root {
@@ -15,8 +15,8 @@ html {
 }
 
 @font-face {
-    font-family: norse-bold;
-    src: url(./fonts/Norse-Bold.otf);
+    font-family: raleway;
+    src: url(./fonts/Raleway-VariableFont_wght.ttf);
   }
 
 body {
