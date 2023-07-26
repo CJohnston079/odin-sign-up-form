@@ -32,6 +32,11 @@ body {
     justify-content: center;
 }
 
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 body > * {
     flex: 1;
     height: 100vh;
@@ -83,6 +88,7 @@ form > * {
 }
 
 #inputs {
+    padding: 0.5rem 2rem;
     background-color: var(--cl-background-accent);
     box-shadow: 2px 2px 4px hsl(0, 0%, 50%, 0.5);
 }
