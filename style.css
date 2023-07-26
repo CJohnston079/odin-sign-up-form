@@ -80,6 +80,7 @@ figure {
 }
 
 form {
+    display: grid;
     background-color: var(--cl-background);
 }
 
@@ -95,6 +96,7 @@ form > * {
 
 #inputs ul {
     display: grid;
+    grid-auto-rows: 1fr;
     grid-template-columns: auto auto;
 }
 
