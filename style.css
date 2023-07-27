@@ -27,6 +27,16 @@ html {
     src: url(./fonts/Raleway-VariableFont_wght.ttf);
   }
 
+@media only screen and (width: 500px) {
+    body {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        height: 200px !important;
+    }
+}
+
 body {
     display: flex;
     justify-content: center;
