@@ -11,6 +11,7 @@ html {
     --cl-blue-dark: hsl(187, 83%, 14%);
     --c-green-light: hsl(31, 39%, 49%);
     --cl-green-dark: hsl(25, 36%, 32%);
+    --cl-red: hsl(355, 100%, 40%);
 
     --cl-background: var(--cl-light-grey);
     --cl-background-accent: var(--cl-white);
@@ -120,6 +121,7 @@ form > * {
 
 label {
     display: block;
+    padding: 4px 0;
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -161,7 +163,14 @@ input:not([type="button"]):focus {
     box-shadow: 2px 2px 2px hsl(0, 0%, 80%, 0.5);
 }
 
-/* input:not([type="button"]):valid {
-    border: solid var(--cl-accent-dark) 0.1rem;
-    box-shadow: 2px 2px 2px hsl(0, 0%, 80%, 0.5);
-} */
+input:not([type="button"]):valid {
+    background-color: var(--cl-light-grey);
+    border: solid var(--cl-accent-light) 0.1rem;
+    color: var(--cl-accent-light);
+}
+
+input:not([type="button"]):invalid {
+    font-weight: bold;
+    border: solid var(--cl-red) 0.1rem;
+    box-shadow: 2px 2px 0px hsl(355, 100%, 40%);;
+}
