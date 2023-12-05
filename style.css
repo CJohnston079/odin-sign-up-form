@@ -76,10 +76,6 @@ a {
     font-weight: 800;
 }
 
-li {
-    margin: 1rem 0rem;
-}
-
 a:hover {
     color: var(--cl-accent-light);
 }
@@ -211,4 +207,22 @@ input:not([type="button"]):not(:focus):invalid {
     font-weight: 500;
     border: solid var(--cl-red) 0.1rem;
     box-shadow: 2px 2px 0px hsl(355, 100%, 40%);;
+}
+
+input:not([type="button"]):not(:focus):invalid + .input-warning {
+    opacity: 1;
+}
+
+.input-warning::first-letter {
+    text-transform: capitalize;
+}
+
+.input-warning {
+    opacity: 0;
+    font-size: 0.7rem;
+    text-transform: lowercase;
+    letter-spacing: 0rem;
+    color: var(--cl-red);
+    transition: opacity 200ms;
+    user-select: none;
 }

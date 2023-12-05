@@ -8,7 +8,7 @@
         <script src="./script.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./normalize.css">
         <link rel="stylesheet" href="./style.css">
         <link rel="icon" type="image/x-icon" href="./images/sign-up-form-favicon.png">
@@ -39,26 +39,32 @@
                     <li>
                         <label for="name">First name:</label>
                         <input type="text" name="name" id="name" placeholder="" style="text-transform: capitalize;">
+                        <label for="name" class="input-warning">*</label>
                     </li>
                     <li>
                         <label for="name">Surname:</label>
                         <input type="text" name="name" id="name" placeholder="" style="text-transform: capitalize;">
+                        <label for="name" class="input-warning">*</label>
                     </li>
                     <li>
                         <label for="email">Email:</label>
                         <input type="text" name="email" id="email" pattern="(^.+@.+\..+$)" placeholder="">
+                        <label for="email" class="input-warning">*Please enter a valid email address</label>
                     </li>
                     <li>
                         <label for="phone">Phone number:</label>
                         <input type="number" name="phone" id="phone" placeholder="">
+                        <label for="phone" class="input-warning">*Please enter a valid phone number</label>
                     </li>
                     <li>
                         <label for="password">Password:</label>
                         <input type="password" name="password" id="password" placeholder="">
+                        <label for="password" class="input-warning">*Passwords do not match</label>
                     </li>
                     <li>
                         <label for="password-confirm">Confirm password:</label>
-                        <input type="password" name="password-confirm" id="password-confirm" placeholder="">
+                        <input type="password" name="password-confirm" id="password-confirm" placeholder="" pattern="^[\s\S]*$" oninput="checkPassword(this)">
+                        <label for="password" class="input-warning">*Password does not match</label>
                     </li>
                 </ul>
             </section>
