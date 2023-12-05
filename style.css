@@ -36,7 +36,8 @@ html {
 
 @media only screen and (max-width: 800px) {
     body,
-    form {
+    form,
+    #inputs ul {
         display: block !important;
     }
 
@@ -98,7 +99,7 @@ a:hover {
 
 #sidebar figure {
     position: absolute;
-    top: 20vh;
+    top: 15vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -137,6 +138,7 @@ form {
 
 form > * {
     padding: 2rem;
+    background-color: var(--cl-background);
 }
 
 #inputs {
@@ -192,7 +194,7 @@ input:not([type="button"]) {
     border: solid hsl(0, 0%, 90%) 0.1rem;
     border-radius: 4px;
     padding: 0.2rem;
-    transition: font-weight 500ms, box-shadow 500ms !important;
+    transition: font-weight 500ms, box-shadow 500ms;
 }
 
 input:not([type="button"]):focus {
